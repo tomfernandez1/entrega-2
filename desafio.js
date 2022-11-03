@@ -17,7 +17,7 @@ class Contenedor {
 
     getAll = async() => {
         try{
-            const productos = await fs.promises.readFile(this.file, "utf-8");
+            const productos = await fs.promises.readFile(this.file, 'utf-8');
             return JSON.parse(productos);
         } catch(err) {
             if(err.message.includes("No such file or directory")) return [];
@@ -42,7 +42,7 @@ class Contenedor {
     getById = async id => {
         let productos = await this.getAll();
         try {
-            const obj = productos.find(id => productos.id === id);
+            const obj = productos.find(productos.id === id);
             return obj ? obj : null;
         } catch(err) {
                 console.log(`error: ${err}`);

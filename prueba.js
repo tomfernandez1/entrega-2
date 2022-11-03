@@ -1,4 +1,4 @@
-const Contenedor = require('./clase');
+const Contenedor = require('./desafio.js').default;
 
 const productos = new Contenedor("productos.txt");
 
@@ -6,7 +6,8 @@ const prueba = async () => {
     let save = await productos.save({
         nombre: "Tom",
         precio: 100,
-        enlace: "4545" 
+        enlace: "4545",
+        id: 4 
     });
     let getAll = await productos.getAll();
     let getById = await productos.getById(5);

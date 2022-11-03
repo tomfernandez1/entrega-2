@@ -42,7 +42,7 @@ class Contenedor {
     getById = async id => {
         let productos = await this.getAll();
         try {
-            const obj = productos.find(productos.id === id);
+            const obj = productos.find(id => productos.id === id);
             return obj ? obj : null;
         } catch(err) {
                 console.log(`error: ${err}`);

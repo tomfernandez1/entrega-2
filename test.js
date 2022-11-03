@@ -1,8 +1,8 @@
-const Contenedor = require('./desafio.js').default;
+const Contenedor = require('./desafio.js');
 
 const productos = new Contenedor("productos.txt");
 
-const prueba = async () => {
+const test = async () => {
     let save = await productos.save({
         nombre: "Tom",
         precio: 100,
@@ -21,4 +21,4 @@ const prueba = async () => {
     console.log(deleteAll);
 };
 
-prueba();
+test();

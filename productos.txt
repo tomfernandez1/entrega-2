@@ -1,0 +1,20 @@
+[
+    {
+        "nombre": "Flynn Paff"
+        "precio": 10
+        "enlace":
+        "id": 1
+    },
+    {
+        "nombre": "Milka"
+        "precio": 80
+        "enlace":
+        "id": 2
+    },
+    {
+        "nombre": "Alfajor Jorgito"
+        "precio": 20
+        "enlace":
+        "id": 3
+    }
+]
